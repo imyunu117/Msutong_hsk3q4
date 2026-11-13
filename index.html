@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f8ed">
+  <meta name="description" content="Trạm ôn luyện tương tác HSK3 quyển 4: điền từ, xếp câu, xem tranh, tình huống và đọc hiểu.">
+  <title>HSK3 Quyển 4 · Trạm ôn luyện</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+  <script src="data.js?v=3" defer></script>
+  <script src="app.js?v=3" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Danh sách bài học">
+      <a class="brand" href="#top"><span class="brand-mark">文</span><span><strong>HSK3 · QUYỂN 4</strong><small>TRẠM ÔN LUYỆN</small></span></a>
+      <div class="sidebar-title">HÀNH TRÌNH 10 BÀI</div>
+      <nav id="lessonNav" aria-label="Chọn bài ôn tập"></nav>
+      <div class="sidebar-footer"><div class="all-progress"><strong id="totalDone">0 / 50</strong><span>nhiệm vụ hoàn thành</span></div><div class="track"><span id="totalBar"></span></div></div>
+    </aside>
+    <main id="top">
+      <header class="topbar"><button class="mobile-lessons" id="mobileLessons" type="button">☰ &nbsp;Chọn bài</button><span class="topbar-label">HỌC QUA TÌNH HUỐNG · TỰ KIỂM TRA · ỨNG DỤNG</span><span class="topbar-dot" aria-hidden="true"></span></header>
+      <section class="hero" aria-labelledby="pageTitle"><div class="hero-kicker"><span class="sparkle">✦</span> BẢN ĐỒ ÔN TẬP <span class="hero-line"></span> 01—10</div><h1 id="pageTitle">Học xong rồi.<br><em>Dùng được chưa?</em></h1><p>160 câu luyện qua 10 bài: chọn từ đúng, ghép câu, quan sát hình, xử lý tình huống và đọc để tìm thông tin.</p><div class="hero-meta"><span>10 bài học</span><b>·</b><span>16 câu / bài</span><b>·</b><span>Tự lưu tiến độ</span></div><div class="hero-decor" aria-hidden="true">练<span>习</span></div></section>
+      <section class="workspace" aria-label="Bài tập đang chọn"><div class="lesson-head"><div><p class="eyebrow">CHẶNG <span id="lessonNumber">01</span> / 10</p><h2 id="lessonTitle"></h2><p id="lessonSub" class="lesson-sub"></p></div><div class="lesson-score"><strong id="lessonDone">0 / 5</strong><small>đã hoàn thành</small></div></div><div class="mission-tabs" id="missionTabs" role="tablist" aria-label="Dạng bài tập"></div><article class="exercise-card" id="exerciseCard" aria-live="polite"></article><div class="exercise-footer"><button class="ghost-btn" id="prevTask" type="button">← Bài trước</button><span id="taskPosition">01 / 05</span><button class="next-btn" id="nextTask" type="button">Tiếp tục <span>→</span></button></div></section>
+      <footer class="site-footer"><span>HSK3 quyển 4 · Bộ câu hỏi ôn tập tự biên soạn dựa trên sách và slide người dùng cung cấp.</span><button type="button" id="resetBtn">Đặt lại tiến độ</button></footer>
+    </main>
+  </div>
+  <div id="announce" class="sr-only" aria-live="polite"></div>
+</body>
+</html>
